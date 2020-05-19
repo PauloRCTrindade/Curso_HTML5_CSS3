@@ -1,5 +1,16 @@
 header{
     background: rgb(180, 180, 180);
+    padding: 20px 0;
+}
+.caixa{
+    position: relative;
+    width: 940px;
+    margin: auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 nav li{
     display: inline;
@@ -13,4 +24,57 @@ nav a{
     text-transform: uppercase;
     font-weight: bolder;
     
+}
+nav li a:hover{
+    color: blue;
+}
+nav li a:active{
+    color: brown;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width:30%;
+    margin: 0 1.5%;
+    border: black solid 2px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px 20px;
+}
+.produtos li:hover{
+    border-color: brown;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.produtos li:hover h2{
+    font-size: 35px;
+}
+.produtos li{
+
+}
+.produtos li:hover .preco{
+    font-size: 30px;
+}
+.descricao{
+    font-size: 18px;
+}
+.preco{
+    font-size: 22px;
+    padding: 20px;
+    font-weight: bolder;
+}
+footer{
+    text-align: center;
+    background: url("bg.jpg");
+    color: white;
+    padding: 40px 0;
 }
