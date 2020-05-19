@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="contato.css">
+    <title>Contato - Barbearia</title>
+</head>
+<body>
+    <header>
+        <div class="caixa">
+            <h1><img src="logo.png" alt=""></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html" > Produtos</a></li>
+                    <li><a href="contatos.html">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="">
+            <label for="nome">Nome e Sobrenome:</label>
+            <input type="text" name="" id="nome" class="inputPadrao">
+
+            <label for="email">Email:</label>
+            <input type="text" name="" id="email" class="inputPadrao">
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" name="contato" id="telefone" class="inputPadrao">
+            
+            <label for="mensagem">Mensagem</label>
+            <textarea name="" id="mensagem" cols="30" rows="10" class="inputPadrao"></textarea>
+
+            <div>
+            <p>
+            Como prefere nosso contato ?
+            </p>
+            <label for="email"><input type="radio" name="contato" id="email">Email</label>  
+
+            <label for="telefone"><input type="radio" name="contato" id="telefone">Telefone</label>
+        
+            <label for="whatsap"><input type="radio" name="contato" id="whatsap">whatsap</label>
+            </div>
+
+            <div>
+            <p>Qual horário prefere ser atendido ?</p>
+            <select name="" id="">
+                <option value="">Manhã</option>
+                <option value="">Tarde</option>
+                <option value="">Noite</option>
+            </select>
+            </div>
+
+            <label for=""><input type="checkbox" name="" id="" class="checkbox"> Gostaria de receber nossas novidades por Email ?</label>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+    <footer>
+        <img src="logo-branco.png" alt="">
+        <p>&copy; Trindade</p>
+    </footer>
+</body>
+</html>
