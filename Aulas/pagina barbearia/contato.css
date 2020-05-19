@@ -41,7 +41,7 @@ form{
     margin: 40px 0;
 }
 
-form label, form p {
+form label, form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -54,4 +54,25 @@ form label, form p {
 }
 .checkbox{
     margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orangered;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: rgb(199, 53, 0);
+    transform: scale(1.2);
+}
+
+.enviar:active{
+    background: green;
 }
