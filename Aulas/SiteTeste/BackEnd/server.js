@@ -1,5 +1,5 @@
 const express = require('express')
-const nanjuckd = require('nunjucks')
+const nunjucks = require('nunjucks')
 
 const server = express()
 
@@ -7,12 +7,12 @@ server.use(express.static('public'))
 
 server.set('view engine','html')
 
-nanjuckd.configure('views',{
-    express: server
+nunjucks.configure('views',{
+   express: server
 })
 
-server.get('/',function(req, res){
-    return res.render('index')
+server.get('/sobre',function(req, res){
+    return res.render('sobre')
 })
 
 server.get('/videos',function(req,res){
