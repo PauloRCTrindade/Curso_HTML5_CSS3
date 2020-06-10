@@ -11,7 +11,7 @@ nunjucks.configure('views',{
    express: server
 })
 
-server.get('/sobre',function(req, res){
+server.get('/',function(req, res){
     return res.render('sobre')
 })
 
