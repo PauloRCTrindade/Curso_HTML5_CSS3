@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    
+
+    {% block head %}
+    <title>Paulo Trindade</title>
+    {% endblock %}
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a href="/">Sobre</a>
+            <a href="/videos">Vídeos Favoritos</a>
+        </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>
