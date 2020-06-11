@@ -1,0 +1,59 @@
+{% extends "layout.njk"%}
+
+{% block head %}
+<title>Paulo Trindade - Videos</title>
+
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+        <div class="titulo">
+            <h1>Vídeos</h1>
+        </div>
+
+        <section class="cards">
+
+            {% for item in itens%}
+            <div class="card" id="{{item.id}}">
+                <div class="containerVideos">
+                    <img src="https://img.youtube.com/vi/{{item.id}}/0.jpg" alt="{{item.title}}">
+                </div>
+                <div class="conteudo">
+                    <p>{{item.title}}</p>
+                </div>
+                <div class="info">
+                    <p class="nAulas">{{item.numeroAulas}}</p>
+                    <p class="price">{{item.price}}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </section>
+
+        <div class="modal-overlay">
+            <div class="modal">
+                <a href="" class="close-modal">
+                    <i class="material-icons">close</i>
+                </a>
+                
+                <div class="modal-content">
+                    <iframe  frameborder="0"></iframe>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </main>
+    <footer>
+        <div class="nome">
+            <p>Paulo Trindade</p>
+        </div>
+        <div class="menu">
+            <a href="https://github.com/PauloRCTrindade" target="_blank">GitHub</a>
+            <a href="">Linkedin</a>
+            <a href="">Instagran</a>
+        </div>
+    </footer>
+{% endblock%}
