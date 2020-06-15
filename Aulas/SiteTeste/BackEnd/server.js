@@ -31,7 +31,25 @@ server.get('/videos',function(req,res){
     return res.render('videos',{itens:videos})
 })
 
+server.get('/video', function(req,res){
+    const id = req.query.id
+
+    const video = videos.find(function(video){
+        if(video.id == id){
+            return  true
+        }
+    })
+
+    if(!video){
+        return res.send('Vídeo não encontrado')
+    }
+    return res.render('video',{video})
+    
+})
+
 server.listen(5000,function(){
     console.log('Server rodando')
 })
+
+
 
