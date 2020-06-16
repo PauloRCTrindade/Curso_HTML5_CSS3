@@ -170,3 +170,20 @@ iframe{
     position: absolute;
     top: 7%;
 }
+/*======= Página de video =====*/
+
+.video{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.containerVideo{
+position: relative;
+padding-top: 70%;
+}
+.containerVideo iframe{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+}
