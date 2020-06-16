@@ -6,16 +6,14 @@
 
 
 {% block content %}
-    <div class="titulo">
+    <div class="titulo" class='video'>
         <h1>{{item.title}}</h1>
     </div>
 
-    <section class="cards">
-
-    
+    <section class="video">    
         <div class="card" id="{{item.id}}">
-            <div class="containerVideos">
-                <img src="https://img.youtube.com/vi/{{item.id}}/0.jpg" alt="{{item.title}}">
+            <div class="containerVideo">
+                <iframe src="https:www.youtube.com/embed/{{item.id}}" frameborder="0"></iframe>
             </div>
             <div class="conteudo">
                 <p>{{item.title}}</p>
